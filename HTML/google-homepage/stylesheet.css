@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr 100px;
+    grid-template-areas: 
+    "header header header header"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    "logo logo logo logo"
+    ". . . ."
+    ". . . .";
+}
+
+.logo {
+    height: 92px;
+    width: 272px;
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer {
+    grid-area: footer;
+}
