@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FUNDAMENTALS PART 2</title>
+</head>
+<body>
+    <label for="theme">Select theme: </label>
+    <select name="theme" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <select name="Weekday" id="weekday">
+        <option value="">--Make a choice--</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+    </select>
+    <p></p>
+    <script>
+       let select = document.querySelector('#weekday')
+       let para = document.querySelector('p')
+
+       select.addEventListener('change', setWeekday)
+
+       function setWeekday() {
+           let choice = select.value
+
+           if (choice === 'monday') {
+               para.textContent = "It's Monday!"
+           } else if (choice === 'tuesday') {
+               para.textContent = "It's Tuesday"
+           } else if (choice === 'wednesday') {
+               para.textContent = "It's Wednesday"
+           } else if (choice === 'thursday') {
+               para.textContent = "It's Thursday"
+           } else if (choice === 'friday') {
+               para.textContent = "It's Friday"
+           } else if (choice === 'saturday') {
+               para.textContent = "It's Saturday"
+           } else if (choice === 'sunday') {
+               para.textContent = "It's Sunday"
+           } else {
+               para.textContent = ''
+           }
+       }
+    </script>
+    <script>
+        let select1 = document.querySelector('#theme')
+        let html = document.querySelector('html')
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor
+            html.style.color = textColor
+        }
+
+        select1.onchange = function() {
+            ( select1.value === 'dark' ) ? update('black', 'white') : update('white', 'black')
+        }
+    </script>
+</body>
+</html>
