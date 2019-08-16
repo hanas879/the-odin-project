@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FUNDAMENTALS PART 3</title>
+</head>
+<body>
+    <script>
+        let x = 1
+
+        function a() {
+            let y = 2
+            output(y)
+        }
+
+        function b() {
+            let z = 3
+            output(z)
+        }
+
+        function output(value) {
+            let para = document.createElement('p')
+            document.body.appendChild(para)
+            para.textContent = 'Value: ' + value;
+        }
+    </script>
+</body>
+</html>
