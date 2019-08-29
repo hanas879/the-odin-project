@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <script>
+        function computerPlay() {
+            let ranNum = Math.round(Math.random() * 2)
+            
+            if(ranNum == 0) {
+                return "Rock"
+            } else if(ranNum == 1) {
+                return "Paper"
+            } else if(ranNum == 2) {
+                return "Scissors"
+            } else {
+                console.log("Error!..")
+            }
+        }
+
+        function game() {
+            let i = 0
+            let humanScore = 0
+            let computerScore = 0
+
+            while(i < 5) {
+                let computer = computerPlay().toLowerCase()
+                let human = prompt("Rock, Paper or Scissors?").toLowerCase()
+
+                if(human == "rock" && computer == "rock") {
+                    console.log("It's a draw!")
+                } else if(human == "rock" && computer == "paper") {
+                    console.log("You lose! Paper beats Rock")
+                    computerScore += 1
+                } else if(human == "rock" && computer == "scissors") {
+                    console.log("You Win! Rock beats Scissors")
+                    humanScore += 1
+                } else if(human == "paper" && computer == "paper") {
+                    console.log("It's a draw!")
+                } else if(human == "paper" && computer == "rock") {
+                    console.log("You Win! Paper beats Rock")
+                    humanScore += 1
+                } else if(human == "paper" && computer == "scissors") {
+                    console.log("You Lose! Scissors beat Paper")
+                    computerScore += 1
+                } else if(human == "scissors" && computer == "rock") {
+                    console.log("You Lose! Rock beats Scissors")
+                    computerScore += 1
+                } else if(human == "scissors" && computer == "paper") {
+                    console.log("You Win! Scissors beats Paper")
+                    humanScore += 1
+                } else if(human == "scissors" && computer == "scissors") {
+                    console.log("It's a draw")
+                } else {
+                    console.log("Error! Something went wrong...")
+                }
+
+                i += 1
+
+                console.log("Computer: " + computerScore)
+                console.log("Human: " + humanScore)
+            }  
+        }
+
+        
+    </script>
+</body>
+</html>
