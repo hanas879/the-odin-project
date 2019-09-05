@@ -27,3 +27,13 @@ content.appendChild(contentH3)
 contentP.classList.add("contentP")
 contentP.textContent = "ME TOO!"
 content.appendChild(contentP)
+
+//Events
+function alertFunction() {
+    alert("Hello World")
+}
+
+let btn = document.querySelector("#btn")
+btn.onclick = alertFunction()
+
+let btn1 = document.querySelector("#btn1");
