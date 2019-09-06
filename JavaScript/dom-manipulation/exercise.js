@@ -33,7 +33,19 @@ function alertFunction() {
     alert("Hello World")
 }
 
-let btn = document.querySelector("#btn")
-btn.onclick = alertFunction()
+let btn = document.querySelector("#btn1")
 
-let btn1 = document.querySelector("#btn1");
+btn.addEventListener('click', function(e){
+    console.log(e.target)
+    e.target.style.background = 'blue'
+})
+
+//Attaching listeners to groups of nodes
+const buttons = document.querySelectorAll("button")
+
+buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        alert(button.id)
+    })
+})
+
