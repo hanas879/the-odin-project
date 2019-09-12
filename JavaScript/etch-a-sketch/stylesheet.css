@@ -1,0 +1,25 @@
+body {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 25% 50% 25%
+}
+
+.container {
+    height: 900px;
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.column {
+
+}
+
+button {
+    height: 100px;
+    width: 50%;
+    margin-left: 2%;
+}
