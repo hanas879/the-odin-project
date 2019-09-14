@@ -2,7 +2,6 @@ let container = document.querySelector(".container")
 let bgColor = "white"
 let color = "black"
 let lastColor = color
-let lastMode = "normal"
 let isRGB = false
 isErase = false
 let cells = 16
