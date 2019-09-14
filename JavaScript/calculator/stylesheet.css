@@ -1,0 +1,39 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template:
+    ". . . . ."
+    ". content content content ."
+    ". content content content ."
+    ". content content content ."
+    ". . . . .";
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template:
+    ". display display display divide"
+    ". seven eight nine times"
+    ". four five six minus"
+    ". one two three plus"
+    ". zero clear . enter";
+}
+
+.num {
+    justify-self: center;
+    align-self: center;
+}
+
+.display {
+    grid-area: display;
+    justify-self: center;
+    align-self: center;
+}
