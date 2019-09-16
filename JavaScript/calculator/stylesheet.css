@@ -28,8 +28,16 @@
 }
 
 .num {
-    justify-self: center;
-    align-self: center;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+.num:hover {
+    border: 1px solid black;
+}
+
+.operator:hover {
+    border: 1px solid black;
 }
 
 .display {
