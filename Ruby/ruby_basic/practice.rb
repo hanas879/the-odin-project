@@ -94,3 +94,31 @@
 #     puts "Chapter " + chapter.to_s + ": " + chapter_subject[chapter].ljust(line_with/2) + " page " + page_number[chapter].to_s
 # end
 # -----------------------------------------------------------------------------
+# puts "What year were you born?"
+# year = gets.chomp
+# puts "Which month?"
+# month = gets.chomp
+# puts "And finally: What day?"
+# day = gets.chomp
+
+# date_born = Time.mktime(year,month,day)
+
+# seconds_lived = Time.new - date_born
+# years_lived = seconds_lived / 60 / 60 / 24 / 365
+
+# puts "SPANK! " * years_lived.round
+# -----------------------------------------------------------------------------
+# class Die
+#     def roll
+#         1 + rand(6)
+#     end
+# end
+
+# dice = [Die.new, Die.new]
+
+# dice.each do |die|
+#     puts die.roll
+# end
+
+# puts Die.new.roll
+#-----------------------------------------------------------------------------
