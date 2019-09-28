@@ -114,7 +114,7 @@ while is_playing
         tree.date
     elsif user_input == "exit" || user_input == "q"
         is_playing = false
-    elsif user_input != "plant" || user_input != "wait" || user_input != "age" || user_input != "pick" || user_input != "count" || user_input != "height" || user_input != "date" || user_input != "exit"
+    elsif user_input != "plant" || user_input != "wait" || user_input != "age" || user_input != "pick" || user_input != "count" || user_input != "height" || user_input != "date"
         puts "That is no command! Read the fucking guide! I can't hardcode every single command you are tinking of..."
     else
         puts "There is no tree planted, please plant one and move on"
