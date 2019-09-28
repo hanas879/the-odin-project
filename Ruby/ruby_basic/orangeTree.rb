@@ -89,7 +89,17 @@ while is_playing
     if user_input == "plant"
         tree = OrangeTree.new
     elsif user_input == "help"
-        puts "Command"
+        puts "[Command]" + "[Description]".rjust(40)
+        puts
+        puts "plant".rjust(6) + "Plant a tree and remove any other old ones".rjust(60)
+        puts "wait".rjust(5) + "Skips the time 1 year forward (any oranges that may hang on the tree will fall off)".rjust(102)
+        puts "date".rjust(5) + "Shows the current date".rjust(41)
+        puts "count".rjust(6) + "Counts how many oranges there are on the tree".rjust(63)
+        puts "age".rjust(4) + "See how old the tree is".rjust(43)
+        puts "height".rjust(7) + "Measures the tree height".rjust(41)
+        puts "pick".rjust(5) + "Grabs an orange and eats it".rjust(46)
+        puts "help".rjust(5) + "Shows this menu".rjust(34)
+        puts "exit or q".rjust(10) + "Exits the simulation".rjust(34)
     elsif user_input == "wait" && tree != 0
         tree.oneYearPasses
     elsif user_input == "age" && tree != 0
@@ -110,7 +120,4 @@ while is_playing
         puts "There is no tree planted, please plant one and move on"
     end
 end
-
-
-#legg alt inn i en loop slik at man kan bruke "gets" til å "spille" spillet
 
