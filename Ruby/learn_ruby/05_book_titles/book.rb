@@ -1,3 +1,4 @@
 class Book
-# write your code here
+    attr_reader :title
+    
 end
